@@ -2,35 +2,35 @@ export default [
   {
     input: "src/index.js",
     output: {
-      file: "dist/bundle-iife.js",
+      file: "dist/iife/bundle-iife.js",
       format: "iife"
     }
   },
   {
-    input: "src/index.js",
+    input: "src/index.lazy.js",
     output: {
-      file: "dist/bundle-cjs.js",
+      dir: 'dist/cjs',
       format: "cjs"
     }
   },
   {
     input: "src/index.js",
     output: {
-      file: "dist/bundle-umd.js",
+      dir: 'dist/umd',
       format: "umd"
     }
   },
   {
-    input: "src/index.js",
+    input: "src/index.lazy.js",
     output: {
-      file: "dist/bundle-amd.js",
+      dir: 'dist/amd',
       format: "amd"
     }
   },
   {
-    input: "src/index.js",
+    input: "src/index.lazy.js",
     output: {
-      file: "dist/bundle-ejs.js",
+      dir: 'dist/es',
       format: "es"
     }
   }

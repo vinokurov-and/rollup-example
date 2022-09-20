@@ -1,4 +1,6 @@
-class TestTreeShaking {}
+import { Page } from "./components/Page";
+
+class TreeShaking {}
 
 class Test {
   static testStatic = "testStatic";
@@ -8,6 +10,6 @@ class Test {
   }
 }
 
-const instance = new Test();
+console.log("Класс:", new Test());
 
-console.log(instance);
+console.log("Импорт:", Page());

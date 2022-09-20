@@ -3,6 +3,10 @@
   factory();
 })((function () { 'use strict';
 
+  const Page = () => {
+    return "Тестовая страница";
+  };
+
   class Test {
     static testStatic = "testStatic";
 
@@ -11,8 +15,8 @@
     }
   }
 
-  const instance = new Test();
+  console.log("Класс:", new Test());
 
-  console.log(instance);
+  console.log("Импорт:", Page());
 
 }));
